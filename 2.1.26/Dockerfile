@@ -26,8 +26,8 @@ RUN apt-get update && \
 
     # Install Anki
     wget -q --no-check-certificate https://github.com/ankitects/anki/releases/download/2.1.26/anki-2.1.26-linux-amd64.tar.bz2 && \
-    tar xjf anki-2.1.26-linux-amd64.tar.bz2 && cd anki-2.1.26-linux-amd6 && make install && cd .. && \
-    rm anki-2.0.45-amd64.tar.bz2 && rm -rf anki-2.0.45 && \
+    tar xjf anki-2.1.26-linux-amd64.tar.bz2 && cd anki-2.1.26-linux-amd64 && make install && cd .. && \
+    rm anki-2.1.26-linux-amd64.tar.bz2 && rm -rf anki-2.1.26-linux-amd64 && \
 
     # Install locales, since UTF-8 is required by Anki
     apt-get install -y locales && \
